@@ -1055,7 +1055,7 @@ html {
   background: #000000;
   opacity: 0.3;
   filter: alpha(opacity=30);
-  z-index: 50;
+  z-index: 150;
 }
 .setting-mdy-mask .setting-mdy-content {
   position: fixed;
@@ -1065,7 +1065,7 @@ html {
   height: auto;
   padding-bottom: 30px;
   background: #ffffff;
-  z-index: 51;
+  z-index: 151;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1493,9 +1493,28 @@ body {
 .sb-info-list{
   margin: 10px 0;
 }
+.list-row{
+  padding: 10px 0;
+}
 .list-row-name{
   font-size: 14px;
   color: #333;
   margin-right: 10px;
 }
- 
+
+#xglyNum{
+  display: none;
+  margin-top: 10px;
+}
+
+.xg-mode{
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.xg-mode:hover{
+  color: #10c55b;
+};
+
+

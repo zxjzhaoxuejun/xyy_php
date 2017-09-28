@@ -435,9 +435,10 @@ if(isset($_POST)&&$_submit==="提交留言"&&$_name!=''&&$_name!=''){
       </div>
     </div>
     <div class="right-menu">
+      <a hfer="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAwNzM5Nl80NjYxMl84MDAwMDczOTZfMl8">
       <div class="right-list kf-mode"><span class="right-icon right-icon-user"></span>
         <div class="text-info">在线客服</div>
-      </div>
+      </div></a>
       <div class="right-list cacl-mode"><span class="right-icon right-icon-cacl"></span>
         <div class="text-info">分享</div>
       </div>

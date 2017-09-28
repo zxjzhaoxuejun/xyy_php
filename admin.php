@@ -28,7 +28,8 @@ function isPasswd($s) {
 }
 $statu=true;
 
-if(!isRegisterUserName($username)){
+if(isset($_POST['submit'])){
+  if(!isRegisterUserName($username)){
   $usernameError="用户名输入错误!";
   $statu=false;
 }else{
@@ -41,7 +42,6 @@ if(!isPasswd($psd)){
 }else{
   $passError="";
 }
-
 
 if($statu){//判断是否点击登录按钮
   //输入的用户名和密码
@@ -62,6 +62,12 @@ if($statu){//判断是否点击登录按钮
   };
   
 }
+
+
+}
+
+
+
 
 ?>
 <!DOCTYPE html>
@@ -103,7 +109,7 @@ if($statu){//判断是否点击登录按钮
                <input type="password" name="password" placeholder="请输入6-24位密码" class="input-val">
                 <p style="color:red;text-align:left;margin-left:120px;"><?php echo $passError;?></p>
              </div>
-             <button class="btn login-btn" type="submit">登录</button>
+             <button class="btn login-btn" type="submit" name="submit">登录</button>
           </form>
       </div>
 
