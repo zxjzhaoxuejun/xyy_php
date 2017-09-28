@@ -14,8 +14,8 @@ if(!$name) {
     return flase;
   }
   //获取管理者名称
-  $rs=mysql_query("select *from admin where admin_id=$id") or die(mysql_error());
-  $userRows=mysql_fetch_array($rs);
+  $rss=mysql_query("select *from admin where admin_id=$id") or die(mysql_error());
+  $userRows=mysql_fetch_array($rss);
 
   $pageSize=$userRows[show_num];//每页显示记录数
   $rs=mysql_query("select count(*) from message_mode");
